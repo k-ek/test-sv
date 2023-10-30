@@ -1,0 +1,101 @@
+---
+# Homepage configuration
+
+title: "Dashboard"
+subtitle: "Teah"
+logo: "logo.png"
+
+header: false
+footer: false # set false if you want to hide it.
+
+# Optional theme customization
+theme: default
+colors:
+  light:
+    highlight-primary: "#3367d6"
+    highlight-secondary: "#4285f4"
+    highlight-hover: "#5a95f5"
+    background: "#f5f5f5"
+    card-background: "#ffffff"
+    text: "#363636"
+    text-header: "#ffffff"
+    text-title: "#303030"
+    text-subtitle: "#424242"
+    card-shadow: rgba(0, 0, 0, 0.1)
+    link: "#3273dc"
+    link-hover: "#363636"
+  dark:
+    highlight-primary: "#3367d6"
+    highlight-secondary: "#4285f4"
+    highlight-hover: "#5a95f5"
+    background: "#131313"
+    card-background: "#2b2b2b"
+    text: "#eaeaea"
+    text-header: "#ffffff"
+    text-title: "#fafafa"
+    text-subtitle: "#f5f5f5"
+    card-shadow: rgba(0, 0, 0, 0.4)
+    link: "#3273dc"
+    link-hover: "#ffdd57"
+
+
+# Services
+
+services:
+  - name: "Infrastructure"
+    icon: "fas fa-server"
+    items:
+      - name: "pfSense"
+        logo: "assets/icons/pfsense.png"
+        subtitle: "Firewall"
+        keywords: "firewall pfsense pf"
+        url: "https://192.168.1.1/index.php"
+        target: "_blank"
+      - name: "UniFi"
+        logo: "assets/icons/unifi.png"
+        subtitle: "Access Point"
+        keywords: "unifi ap uap"
+        url: "https://192.168.1.1:8443/manage/account/login?redirect=%2Fmanage%2Fdefault%2Fdevices"
+        target: "_blank"
+  - name: "Applications"
+    icon: "fas fa-cloud"
+    items:
+      - name: "Portainer"
+        logo: "assets/icons/portainer.png"
+        subtitle: "Docker Containers"
+        keywords: "portainer docker"
+        url: "http://${SERVER_IP}:9000/#!/2/docker/containers"
+        target: "_blank"
+      - name: "PhotoPrism"
+        logo: "assets/icons/photoprism.png"
+        subtitle: "Photo Album"
+        keywords: "photoprism photo"
+        url: "http://192.168.1.100:2342/library/browse"
+        target: "_blank"
+      - name: "Transmission"
+        logo: "assets/icons/transmission.png"
+        subtitle: "Torrents"
+        keywords: "transmission torrents"
+        url: "http://${SERVER_IP}:9091/transmission/web/"
+        target: "_blank"
+      - name: "Uptime Kuma"
+        logo: "assets/icons/uptimekuma.svg"
+        subtitle: "Uptime tracking"
+        keywords: "uptime uptimekuma kuma"
+        url: "http://${SERVER_IP}:3001/dashboard"
+        target: "_blank"
+  - name: "Devices"
+    icon: "fas fa-print"
+    items:
+      - name: "Voron"
+        logo: "assets/icons/fluidd.svg"
+        subtitle: "3d printer"
+        keywords: "voron printer 3d"
+        url: "http://192.168.2.101/#/"
+        target: "_blank"
+      - name: "Epson"
+        logo: "assets/icons/printer.png"
+        subtitle: "Printer"
+        keywords: "epson"
+        url: "http://192.168.2.109"
+        target: "_blank"
